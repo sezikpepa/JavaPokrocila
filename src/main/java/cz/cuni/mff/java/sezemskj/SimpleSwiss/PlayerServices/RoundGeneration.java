@@ -61,8 +61,8 @@ public class RoundGeneration {
     }
 
     public void saveRoundDraw(int roundNumber, RoundDraw roundDraw){
-        var folderPath = new LocationService().getPath();
-        try (BufferedWriter fileWriter = new BufferedWriter(new FileWriter(folderPath + "\\" + FILE_NAME + roundNumber + EXTENSION))) {
+        File folderPath = new LocationService().getPath();
+        try (BufferedWriter fileWriter = new BufferedWriter(new FileWriter(folderPath.toPath().resolve(FILE_NAME + roundNumber + EXTENSION).toFile()))) {
             for(var match : roundDraw.GetRoundPairs()){
                 fileWriter.write(getMatchForCSV(match));
                 fileWriter.newLine();

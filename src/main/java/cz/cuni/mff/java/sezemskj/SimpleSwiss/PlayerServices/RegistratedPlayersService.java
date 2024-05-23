@@ -45,7 +45,7 @@ public class RegistratedPlayersService {
 
 
     public void registerNewPlayer(Player player){
-        var folderPath = new LocationService().getPath();
+        File folderPath = new LocationService().getPath();
         try (BufferedWriter fileWriter = new BufferedWriter(new FileWriter(folderPath.toPath().resolve(FILE_NAME).toFile(), true))) {
             fileWriter.write(getPlayerForCSV(player));
             fileWriter.newLine();
@@ -67,7 +67,7 @@ public class RegistratedPlayersService {
 
         ArrayList<Player> registeredPlayers = getAllRegisteredPlayers();
 
-        var folderPath = new LocationService().getPath();
+        File folderPath = new LocationService().getPath();
         File file = folderPath.toPath().resolve(FILE_NAME).toFile();
         if (file.exists()) {
             file.delete();

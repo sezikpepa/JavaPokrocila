@@ -22,7 +22,7 @@ public class LocationService {
 
     public File getPath(){
         try (BufferedReader fileReader = new BufferedReader(new FileReader(FILE_NAME))) {
-            var path = fileReader.readLine();
+            String path = fileReader.readLine();
             return new File(path);
         } catch (IOException e) {
             return null;

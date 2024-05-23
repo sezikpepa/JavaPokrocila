@@ -10,6 +10,7 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
@@ -88,7 +89,9 @@ public class ResultsPage extends BasicPage {
             layout.getChildren().add(component);
         }
 
-        scene = new Scene(layout, 800, 400);
+        ScrollPane scrollable = new ScrollPane(layout);
+
+        scene = new Scene(scrollable, 800, 400);
     }
 
     private HBox getButtonBox() {

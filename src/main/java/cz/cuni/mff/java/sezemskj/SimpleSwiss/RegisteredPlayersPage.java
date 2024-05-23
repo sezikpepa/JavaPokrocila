@@ -10,6 +10,7 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
@@ -47,7 +48,9 @@ public class RegisteredPlayersPage extends BasicPage {
         loadAllPlayers();
         disablePlayerDeleteAndRegisterNewPlayerIfTournamentStarted();
 
-        scene = new Scene(_vbox, 800, 400);
+        ScrollPane scrollable = new ScrollPane(_vbox);
+
+        scene = new Scene(scrollable, 800, 400);
     }
 
     private HBox initializeMenuButtons(){
