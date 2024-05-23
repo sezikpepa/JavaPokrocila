@@ -3,7 +3,7 @@
 
 **Význam programu**
 
-Jelikož losování švýcarským systémem je náročná disciplína pro člověka z důvodu složitých párovacích pravidel, je lepší využít program k tomu určený. Tento program umožňuje zaregistrovat hráče na turnaj, vygenerovat jednotlivá kola švýcarským systémem a po odehrání všech kol zobrazit konečné výsledky.
+Jelikož losování švýcarským systémem je náročná disciplína pro člověka z důvodu složitých párovacích pravidel, je lepší využít program k tomu určený. Tento program umožňuje zaregistrovat hráče na turnaj, vygenerovat jednotlivá kola švýcarským systémem a po odehrání všech kol zobrazit konečné výsledky a též zobrazit animaci stupňů vítězů.
 
 
 **Vytvoření turnaje**
@@ -30,4 +30,4 @@ Na zobrazení pěkné animace tří nejlepších hráčů na stupních vítězů
 
 **Nový turnaj**
 
-Aplikace si pamatuje složku, kde jsou uloženy údaje o turnaji. Pokud bychom chtěli vytvořit nový turnaj, vytvoříme si na disku novou složku, kterou poté v nastavení změníme na námi nově vytvořenou (tlačítko "Show settings"). Jelikož nová složka již nebude obsahovat nová data, aplikace zobrazí prázdný turnaj a my můžeme pokračovat v novém turnaji.
+Aplikace si pamatuje složku, kde jsou uloženy údaje o turnaji. Pokud bychom chtěli vytvořit nový turnaj, vytvoříme si na disku novou složku, kterou poté v nastavení změníme na námi nově vytvořenou (tlačítko "Show settings" na stránce s registrovanými hráči). Jelikož nová složka již nebude obsahovat nová data, aplikace zobrazí prázdný turnaj a my můžeme pokračovat v novém turnaji.
